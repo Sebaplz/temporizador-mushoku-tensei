@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+body {
+  background-image: url("/wallpaper1.webp");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  animation: change 20s infinite ease-in-out;
+  transition: background-image 1s ease-in-out;
+}
+h1,
+h4 {
+  font-family: "Krona One", sans-serif;
+}
+
+@keyframes change {
+  0% {
+    background-image: url(/wallpaper1.webp);
+  }
+  16.666% {
+    background-image: url(/wallpaper2.webp);
+  }
+  33.333% {
+    background-image: url(/wallpaper3.webp);
+  }
+  50% {
+    background-image: url(/wallpaper4.webp);
+  }
+  66.666% {
+    background-image: url(/wallpaper5.webp);
+  }
+  83.333% {
+    background-image: url(/wallpaper6.webp);
+  }
+  100% {
+    background-image: url(/wallpaper1.webp);
+  }
+}
+
+@media (max-width: 1000px) {
+  @keyframes change {
+    0% {
+      background-image: url(/wallpaper1.webp);
+    }
+    16.666% {
+      background-image: url(/wallpaper2.webp);
+    }
+    33.333% {
+      background-image: url(/wallpaper3.webp);
+    }
+    50% {
+      background-image: url(/wallpaper5.webp);
+    }
+    66.666% {
+      background-image: url(/wallpaper2.webp);
+    }
+    83.333% {
+      background-image: url(/wallpaper3.webp);
+    }
+    100% {
+      background-image: url(/wallpaper1.webp);
+    }
+  }
+}

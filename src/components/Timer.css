@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "digital-7";
+  src: local("digital-7"), url(../fonts/digital-7.ttf) format("truetype");
+}
+h2 {
+  font-family: "digital-7";
+}
+h3 {
+  font-family: "Krona One", sans-serif;
+  text-transform: uppercase;
+}
